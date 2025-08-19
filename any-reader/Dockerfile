@@ -10,4 +10,4 @@ RUN npm install -g any-reader@latest --omit=dev && npm cache clean --force && rm
 
 RUN  mkdir -p /root/.any-reader && echo "{}" | cat > /root/.any-reader/config.desktop.json
 
-CMD ["any-reader", "web", "-p", "${PORT}"]
+ENTRYPOINT ["any-reader", "web"]
