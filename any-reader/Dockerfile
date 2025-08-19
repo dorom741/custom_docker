@@ -8,6 +8,6 @@ RUN echo 'use npm mirror' && npm config set registry https://registry.npmmirror.
 RUN npm install -g any-reader@latest --omit=dev && npm cache clean --force && rm -rf /root/.cache/puppeteer 
 # RUN npm install -g any-reader@latest --omit=dev
 
-RUN  mkdir -p /root/.any-reader && echo "{}" | cat > /root/.any-reader/config.desktop.json
+RUN  mkdir -p /root/.any-reader && echo "{}" > /root/.any-reader/config.desktop.json
 
 ENTRYPOINT ["any-reader", "web"]
