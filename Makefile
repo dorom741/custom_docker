@@ -1,7 +1,7 @@
 ROOT_DIR    = $(shell pwd)
 NAMESPACE   = "default"
 
-IMAGE_NAME = ghcr.io/dorom741/custom_docker/anyreader:silm
+IMAGE_NAME = ghcr.io/dorom741/custom_docker/any-reader:silm
 # GIT_HASH = $(shell git rev-parse --short  HEAD)
 
 build_docker:
